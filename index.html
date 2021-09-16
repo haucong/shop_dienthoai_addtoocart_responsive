@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBHUB-SHOP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!--======================== NAVBAR==============================-->
+    <nav>
+        <div class="nav-responsive">
+            <!-- <img src="./logo/logocart.jpg" alt="" class="logo" id="logo"> -->
+            <a href="" class="home">
+                <i class="fas fa-store logo" id="logo">
+                    <span></span>
+                </i>
+            </a>
+
+            <div class="nav-search">
+                <form action="" onsubmit="return false">
+                    <a href="#">
+                        <i class="fa fa-search" id="find"></i>
+                    </a>
+                    <input type="text" id="search" placeholder="nhập sản phẩm bạn muốn mua..">
+                </form>
+            </div>
+            <div class="access">
+                <a href="#" id="notifycation">
+                    <i class="fa fa-bell"></i>
+                </a>
+                <a href="#" id="cart">
+                    <i class="fa fa-shopping-cart"></i>
+                </a>
+                <a href="#" id="bars">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#" id="account">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--======================== MAIN SECTION==============================-->
+
+
+
+    <div id="main">
+        <!--======================== CATEROGY SECTION==============================-->
+        <div id="categories">
+            <!-- <a href="" class=" brand btn active" onclick="changeProductList('all')">
+                <div class="img-container">
+                    <img src="./images/all-cellphone.png" alt="new" class="brand-img">
+                </div>
+                <h4 class="brand-name">All</h4>
+            </a> -->
+            <a href="#" class="brand  btn" onclick="changeProductList('new')">
+                <div class="img-container">
+                    <img src="./images/all-cellphone.png" alt="new" class="brand-img">
+                </div>
+                <h4 class="brand-name">new</h4>
+            </a>
+            <a href="#" class="brand btn" onclick="changeProductList('iphone')">
+                <div class="img-container btn">
+                    <img src="./images/iphone-11-pro-max-green-200x200.jpg" alt="" class="brand-img">
+                </div>
+                <h4 class="brand-name">Iphone</h4>
+            </a>
+            <a href="#" class="brand btn" onclick="changeProductList('oppo')">
+                <div class="img-container">
+                    <img src="./images/oppo-a74-blue-9-600x600.jpg" alt="" class="brand-img">
+                </div>
+                <h4 class="brand-name">Oppo</h4>
+            </a>
+            <a href="#" class="brand btn" onclick="changeProductList('samsung')">
+                <div class="img-container">
+                    <img src="./images/samsung-galaxy-a22-den-2-600x600.jpg" alt="" class="brand-img">
+                </div>
+                <h4 class="brand-name">Samsung</h4>
+            </a>
+            <a href="#" class="brand btn" onclick="changeProductList('vivo')">
+                <div class="img-container">
+                    <img src="./images/vivo-y12s-den-new-600x600-600x600.jpg" alt="" class="brand-img">
+                </div>
+                <h4 class="brand-name">Vivo</h4>
+            </a>
+            <!-- <a href="#" class="brand btn" onclick="changeProductList('vmart')">
+                <div class="img-container">
+                    <img src="./images/vsmart-live-4-xanh-la-600x600.jpg" alt="" class="brand-img">
+                </div>
+                <h4 class="brand-name">Vmart</h4>
+            </a> -->
+            <a href="#" class="brand btn" onclick="changeProductList('realme')">
+                <div class="img-container">
+                    <img src="./images/xiaomi-mi-11-lite-4g-blue-600x600.jpg" alt="" class="brand-img">
+                </div>
+                <h4 class="brand-name">Realme</h4>
+            </a>
+        </div>
+
+        <!-- end of categories section -->
+
+        <!-- latest smartphones section -->
+        <section class="categories" id="new">
+            <div class="title-container">
+                <h1 id="title">Điện thoại mới nhất</h1>
+                <button id="item-btn">Xem tất cả</button>
+            </div>
+            <div class="card">
+                <div class="item-container" id="0">
+                    <div class="card-item">
+                        <img src="./images/oppo-reno6-z-5g-aurora-1-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Oppo reno6 Z 5G</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 12000000</h3>
+                </div>
+                <div class="item-container" id="1">
+                    <div class="card-item">
+                        <img src="./images/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Iphone 12 Pro Max 128GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 29900000</h3>
+                </div>
+                <div class="item-container" id="2">
+                    <div class="card-item">
+                        <img src="./images/realme_5_pro_0e39693587174ff2b75084ae6df59622_grande.jpg" alt=""
+                            id="card-img">
+                        <p id="item-name">Realme 5 Pro</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 4990000</h3>
+                </div>
+                <div class="item-container" id="3">
+                    <div class="card-item">
+                        <img src="./images/xiaomi-redmi-note-10-5g-xanh-bong-dem-1-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Xiaomi redmi note 10 5g</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 6490000</h3>
+                </div>
+            </div>
+        </section>
+        <!-- end of latest smartphones -->
+
+
+        <!-- Samsung Phones -->
+        <section class="categories" id="samsung">
+            <div class="title-container">
+                <h1 id="title">SAMSUNG</h1>
+                <button id="item-btn">Xem tất cả</button>
+            </div>
+            <div class="card ">
+                <div class="item-container" id="4">
+                    <div class="card-item">
+                        <img src="./images/samsung-galaxy-a22-den-2-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Samsung galaxy A22 đen</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 5900000</h3>
+                </div>
+                <div class="item-container" id="5">
+                    <div class="card-item">
+                        <img src="./images/samsung-galaxy-a52-8gb-256gb-thumb-violet-600x600-600x600.jpg" alt=""
+                            id="card-img">
+                        <p id="item-name">Samsung galaxy A52 đen</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 6900000</h3>
+                </div>
+                <div class="item-container" id="6">
+                    <div class="card-item">
+                        <img src="./images/samsung-galaxy-s21-tim-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Samsung galaxy S21 Tím</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 4900000</h3>
+                </div>
+                <div class="item-container" id="7">
+                    <div class="card-item">
+                        <img src="./images/samsung-galaxy-tab-s7-fe-green-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Samsung galaxy Tab S7 Xanh</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 7100000</h3>
+                </div>
+            </div>
+        </section>
+        <!-- end of redmi Phones -->
+
+        <!-- REALME Phones -->
+        <section class="categories" id="realme">
+            <div class="title-container">
+                <h1 id="title">REALME</h1>
+                <button id="item-btn">Xem tất cả</button>
+            </div>
+            <div class="card">
+                <div class="item-container" id="8">
+                    <div class="card-item">
+                        <img src="./images/realme-8-5g-blue-1-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Realme 8 5G Blue</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 3900000</h3>
+                </div>
+                <div class="item-container" id="9">
+                    <div class="card-item">
+                        <img src="./images/realme-c21y-black-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Realme c21y Black</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 4900000</h3>
+                </div>
+                <div class="item-container" id="10">
+                    <div class="card-item">
+                        <img src="./images/realme c3i 2GB32GB.jpg" alt="" id="card-img">
+                        <p id="item-name">Realme c3i 2GB/32GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 8990000</h3>
+                </div>
+                <div class="item-container" id="11">
+                    <div class="card-item">
+                        <img src="./images/realme-q2-mhm_eab8963df79049e792076a2f93cf4605_1024x1024.jpg" alt=""
+                            id="card-img">
+                        <p id="item-name">Realme Q2 </p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 6790000</h3>
+                </div>
+            </div>
+        </section>
+        <!-- end of redmi Phones -->
+
+
+        <!-- OPPO Phones -->
+        <section class="categories" id="oppo">
+            <div class="title-container">
+                <h1 id="title">OPPO</h1>
+                <button id="item-btn">Xem tất cả</button>
+            </div>
+            <div class="card">
+                <div class="item-container " id="12">
+                    <div class="card-item">
+                        <img src="./images/oppo-10049096-dien-thoai-oppo-a54-4gb-128gb-xanh-1.jpg" alt="" id="card-img">
+                        <p id="item-name">Oppo A54 4GB Xanh</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 3890000</h3>
+                </div>
+                <div class="item-container" id="13">
+                    <div class="card-item">
+                        <img src="./images/oppo-a74-blue-9-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Oppo A74 Blue</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 8900000</h3>
+                </div>
+                <div class="item-container" id="14">
+                    <div class="card-item">
+                        <img src="./images/oppo-a37.png" alt="" id="card-img">
+                        <p id="item-name">Oppo A37</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 11900000</h3>
+                </div>
+                <div class="item-container" id="15">
+                    <div class="card-item">
+                        <img src="./images/oppo-a53-4gb.jpg" alt="" id="card-img">
+                        <p id="item-name">Oppo S53 4GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 9900000</h3>
+                </div>
+            </div>
+        </section>
+        <!-- end of OPPO Phones -->
+
+
+        <!-- iphone section -->
+        <section class="categories" id="iphone">
+            <div class="title-container">
+                <h1 id="title">IPHONE</h1>
+                <button id="item-btn">Xem tất cả</button>
+            </div>
+            <div class="card">
+                <div class="item-container" id="16">
+                    <div class="card-item">
+                        <img src="./images/iphone-11-pro-max-green-200x200.jpg" alt="" id="card-img">
+                        <p id="item-name">Iphone 11 Pro Max 128GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 24900000</h3>
+                </div>
+                <div class="item-container" id="17">
+                    <div class="card-item">
+                        <img src="./images/iphone-12-pro-max-xanh-duong-new-600x600-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Iphone 12 Pro Max 128GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 29900000</h3>
+                </div>
+                <div class="item-container" id="18">
+                    <div class="card-item">
+                        <img src="./images/iphone-12-xanh-duong-600x600.jpg" alt="" id="card-img">
+                        <p id="item-name">Iphone 12 Pro Max 256GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 23000000</h3>
+                </div>
+                <div class="item-container" id="19">
+                    <div class="card-item">
+                        <img src="./images/iphone-6-32gb-gold-hh-600x600-600x600-200x200.jpg" alt="" id="card-img">
+                        <p id="item-name">Iphone 6 Plus 32GB</p>
+                    </div>
+                    <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+                    <h3 id="item-price">Giá : 5900000</h3>
+                </div>
+            </div>
+        </section>
+        <!-- end of latest smartphones -->
+
+        <!-- footer -->
+        <footer>
+            <p id="footer-title">Hỗ trợ kỹ thuật</p>
+            <div class="footer">
+                <div class="support">
+                    <ul>
+                        <h3>Về chúng tôi</h3>
+                        <li><a href="#" id="introduce">Giới thiệu</a></li>
+                        <li><a href="#" id="recruitment">Tuyển dụng</a></li>
+                        <li><a href="#" id="rules">Điều khoản</a></li>
+                        <li><a href="#" id="Privacy-Policy">Chính sách bảo mật</a></li>
+                        <li><a href="#" id="genuine-goods">Chính Hãng</a></li>
+                        <li><a href="#" id="media-contact">Liên hệ truyền thông</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-media">
+                    <ul>
+                        <h3>Liên hệ với chúng tôi</h3>
+                        <li>
+                            <i class="fab fa-facebook"></i>
+                            <a href="" id="facebook">Facebook</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <a href="" id="instagram">instagram</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter-square"></i>
+                            <a href="" id="twitter">twitter</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="" id="github">github</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="address">
+                    <h3>Địa chỉ văn phòng</h3>
+                    <p>ấp Mỹ Trinh A</p>
+                    <p>Xã Hậu Mỹ Trinh</p>
+                    <p>Cái Bè, Tiền Giang</p>
+                    <p>Việt Nam</p>
+                    <p>sdt: 0969116380</p>
+                </div>
+            </div>
+
+            <div id="copyright">
+                <p>&#169 : 2021 Conghau</p>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+
+
+    <!-- -----------------------DETAIL------------------- -->
+    <div id="detail-page">
+        <div class="details">
+            <div class="item-details">
+                <div class="image-container">
+                    <img src="./images/samsung-galaxy-a22-den-2-600x600.jpg" alt="img" id="detail-img">
+                </div>
+                <div class="details-card">
+                    <h2 id="detail-title">Samsung Galaxy A22 Đen</h2>
+                    <h4 id="detail-price"> Giá : 300</h4>
+                    <p id="save">Tiết kiệm: 500.000vnd</p>
+                    <p id="ship"><strong>Giao hàng : </strong> 3 - 4 ngày</p>
+                    <p>
+                        <strong>Mô tả : </strong>
+                        <ul>
+                            <li>
+                                Ưu điểm lớn nhất của Samsung Galaxy A02s chính là viên pin dung lượng khủng 5000 mAh cho
+                                phép người dùng có thể sử dụng lên tới hai ngày với nhu cầu trung bình mà không phải lo
+                                máy
+                                sập nguồn giữa chừng.
+                                Đây là chiếc smartphone giá rẻ hiếm hoi được trang bị tính năng sạc nhanh với công suất
+                                15 W
+                                giúp người dùng không tốn quá nhiều thời gian để nạp đầy năng lượng cho viên pin.
+                                Lưu ý: Sạc kèm theo máy có công suất 7.8 W.
+                            </li>
+                            <li>
+                                Samsung Galaxy A02s giúp mang lại trải nghiệm mới mẻ cho những ai đang thấy chán với
+                                những
+                                thiết bị vỏ nhựa thông thường. Mặt lưng
+                                của máy với các họa tiết vân sần hình kim cương giúp máy nổi bật giữa một rừng
+                                smartphone
+                                giá rẻ.
+                            </li>
+
+                        </ul>
+                    </p>
+                    <button id="carts">Thêm vào vỏ hàng</button>
+                    <button id="back">Trở về </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------end DETAIL------------------- -->
+
+    <!-- -----------------------cart list------------------- -->
+    <div id="cart-container">
+        <p id="cart-title"><strong> Vỏ hàng của bạn</strong></p>
+        <div id="empty-cart">
+            <h1>Chưa có sản phẩm trong vỏ hàng</h1>
+        </div>
+        <div id="cart-with-items">
+            <div class="cart-column">
+                <h3>Sản phẩm</h3>
+                <h3>Tên Sản phẩm</h3>
+                <h3>Tổng cộng (vnd) </h3>
+                <h3>Số lượng</h3>
+                <h3>Xóa</h3>
+            </div>
+
+            <div id="item-body">
+
+            </div>
+
+            <div id="total">
+                <h3 id="total-items"> </h3>
+                <h2 id="total-amount"> </h2>
+                <h3 id="you-saved"></h3>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------endcart list------------------- -->
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>

@@ -268,8 +268,6 @@ footer{
     grid-template-columns: auto auto;
     grid-gap: 2rem;
     font-size: 0.9rem;
-    margin-left: 8rem;
-
 }
 .footer h3{
     font-size: 1.2rem;
